@@ -1,5 +1,8 @@
-.App {
-  text-align: center;
+*{
+margin: 5px;
+}
+.App  {
+  text-align: start ;
 }
 
 .App-logo {
@@ -40,4 +43,18 @@
   background-color: white;
   color: #0d6efd;
   border-color: white;
+}
+.picture {
+  width: 100px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+h3 {
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  color: red;
 }
