@@ -46,8 +46,7 @@ margin: 5px;
 }
 .picture {
   width: 100px;
-  display: flex;
-  margin-top: 50px;
+ 
   margin-left: 20px;
   border-radius: 10px;
 }
@@ -57,4 +56,8 @@ h3 {
 }
 h2 {
   color: red;
+}
+.boxes{
+  display: flex;
+  justify-content: space-between;
 }
