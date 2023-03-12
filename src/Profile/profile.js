@@ -1,15 +1,10 @@
 import PropTypes from "prop-types";
 
-const Myprofile = (props) => {
-  Myprofile.propTypes = {
-    fullname: PropTypes.string,
-    bio: PropTypes.any,
-    profesion: PropTypes.string,
-  };
-
+const Myprofile = (props,{children}) => {
   return (
     <>
       <h1 style={{ color: "blue", textAlign: "center" }}>{props.fullname}</h1>
+      {children=<img  src="/bio.png" alt="myphoto" />}
       <h2 style={{ color: "red", fontSize: 45 }}>
         Short biography :
         <p style={{ color: "black", fontSize: 30, textAlign: "justify" }}>
@@ -22,10 +17,13 @@ const Myprofile = (props) => {
       <button onClick={() => props.handleName(`${props.fullname}`)}>
         ClickMe
       </button>
-      <h1 style={{ color: "grey" }}>
-        React {`${props.version}`} Documentation
-      </h1>
     </>
   );
 };
 export default Myprofile;
+Myprofile.defaultProps = ["none", "profile", "bio"];
+Myprofile.propTypes = {
+  fullname: PropTypes.string,
+  bio: PropTypes.string,
+  profesion: PropTypes.string,
+};
